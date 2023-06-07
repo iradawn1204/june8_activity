@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 md:from-indigo-500  sm:from-indigo-500  ">
+    <!-- Your task is to make this website responsive from large screen to mobile screens using tailwind CSS NO custom media queries -->
+    <header>
+       <nav class="p-2 bg-gray-900  text-white   md:flex md:items-center md:justify-between w-full h-full object-cover relative px-4 py-4 flex justify-between items-center">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-10 inline max-h-[600px] rounded-full "
+              src="https://yt3.ggpht.com/xew4JUG5Vx1Uh7Ezmcpr0tVJ_j9biScPWxouVtPN2Sn_IYwbzcD_87aZnLW9TtmEQBsfr89PPQ=s108-c-k-c0x00ffffff-no-rj">
+          </span>
+          <ul class=" ist-disc [&>*:first-child]:text-white-600 [&>*:first-child]:font-bold md:flex md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+            <li class="mx-4 my-6 md:my-0 space-x-1">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500 ">Kishika</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500 ml-20">HOME</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 ">
+            
+            <style>
+                #sortbox:checked ~ #sortboxmenu {
+                    opacity: 1; }
+            </style>
+            
+            <div class="relative">
+                <input type="checkbox" id="sortbox" class="hidden absolute">
+                <label for="sortbox" class="flex items-center space-x-1 cursor-pointer">
+                <span class="text-lg hover:text-cyan-500 duration-500 ">CATEGORY</span>
+                <svg class="h-4 w-4"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </label>
+            
+                    <div id="sortboxmenu" class=" absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-white border border-gray-400 transition delay-75 ease-in-out z-10">
+                    <ul class="block text-right text-gray-900">
+                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Horror</a></li>
+                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">Adventure</a></li>
+                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">RPG</a></li>
+                        <li><a href="#" class="block px-3 py-2 hover:bg-gray-200">FPS</a></li>
+                    </ul>
+                </div>
+            </div>  
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 mr-48">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500">PAGES</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0 ml-60 flex">
+              <img class="h-7 inline ml-3"
+              src="data:image/png;base64,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">
+              <a href="#" class="text-xl hover:text-cyan-500 duration-500 ">LOGIN/SIGNUP</a>
+            </li>
+          </nav>  
+    </header>
+
+    <main>   
+      <!-- you can use different images if you want to -->
+      <section class="section_images py-16">
+        <!-- i manipulated the grid-cols to set the first column to have to occupy 70% of its width (not the parent) 
+          while the other column will occupy what ever is left to occupy (130% of its self [the 30 added coz the other shrunk]) -->
+        <div
+          class="grid max-w-5xl mx-auto grid-cols-[0.7fr_minmax(0px,1fr)] gap-3"
+        >
+          <div class="relative ">
+            <img
+              src="https://images.unsplash.com/photo-1638741631188-a42a58d5499c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              class="resize-y rounded-md bg-cover max-h-[600px] w-full h-full object-cover"
+            />
+            <!-- notice how i use semantic HTML in this div content -->
+            <div class="absolute top-7 left-7 flex flex-col gap-3">
+              <!-- I mostly use span for 1-5 words or a short sentence or subheading instead of <p>[since this is for long texts] -->
+          
+              <!-- This is a title so I have to use h2 [use heading tags for titles, h1-h6] -->
+              <h2 class="uppercase md:text-4xl sm:text-[15] font-bold text-white hover:text-cyan-500 duration-500 ">
+                Social Media
+              </h2>
+              <a
+                href="#"
+                class="text-sm hover:underline underline-offset-4 font-bold text-white  hover:text-cyan-500 duration-500 md:flex md:text-base"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                class="resize-y rounded-md max-h-[300px]  w-full h-full object-cover "
+              />
+              <div class="absolute top-7 left-7 flex flex-col gap-3">
+                <h2 class="uppercase md:text-4xl sm:text-[15] font-bold text-white hover:text-cyan-500 duration-500 ">
+                  Blogs
+                </h2>
+                <a
+                  href="#"
+                  class="text-sm hover:underline underline-offset-4 font-bold text-white  hover:text-cyan-500 duration-500  md:text-base"
+                  >Read More </a
+                >
+              </div>
+            </div>
+  
+            <!-- I set a 100% height here [h-full] because the images weren't occupying the whole box as i expected it to do even if they have 100% height
+            i noticed that this grid container is part of the flex-box container and that's what was causing the problem, so i had to set this grid 
+            container to 100% height so that the images will inherit the height of this grid container. 
+            ( you can test that by removing the h-full or maybe changing the height to whatever you want such as h-[400px] 
+              but the image will not go lower than its ACTUAL height even if you lower it to 10px)
+  
+            if you want me to explain more about inheritance among parent and children elements then you can 
+            just ping me in discord or any topics that you want me to explain :D
+            -->
+            <div class="grid grid-cols-2 gap-3 h-full">
+              <div class="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1665592512676-840f7b669aeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdhbWVyJTIwc2V0dXB8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt="Furniture Image"
+                  class="w-full h-full object-cover rounded-md"
+                />
+                <div class="absolute top-7 left-7 flex flex-col gap-3"> 
+                  <h2 class="uppercase md:text-4xl md:texr sm:text-[15] font-bold text-white  hover:text-cyan-500 duration-500">
+                    Only Fans
+                  </h2>
+                  <a
+                    href="#"
+                    class="text-sm hover:underline underline-offset-4 font-bold text-white hover:text-cyan-500 duration-500 md:flex  md:text-base"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1265&q=80"
+                  alt="Furniture Image"
+                  class="w-full h-full object-cover rounded-md"
+                />
+                <div class="absolute top-7 left-7 flex flex-col gap-3">
+                  <h2 class="uppercase md:text-4xl sm:text-[15] font-bold text-white hover:text-cyan-500 duration-500 ">
+                    Donation Page
+                  </h2>
+                  <a
+                    href="#"
+                    class="text-sm hover:underline underline-offset-4 font-bold text-white hover:text-cyan-500 duration-500 md:flex  md:text-base"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class="p-2 bg-gray-900  "> 
+    <div class="flex h-screen items-center justify-center bg-black">
+      <div class="relative">
+        <div class="absolute -inset-1 rounded-lg bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 opacity-75 blur"></div>
+        <h1 class="text-white">© 2023 | Kishika</h1>
+
+      </div>
+    </div>
+  </footer>
+  
+</html>
+
